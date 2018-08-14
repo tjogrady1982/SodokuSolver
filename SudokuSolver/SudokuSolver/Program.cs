@@ -13,6 +13,11 @@ namespace SudokuSolver
             var Board = new Board();
             var newboard = Board.GetBoard();
 
+            var check = new RuleCheck();
+
+            check.Solve(newboard);
+            Console.ReadLine();
+
         }
     }
 }
