@@ -13,7 +13,12 @@ namespace SudokuSolver
         public void Solve(int[,] boardData) //attempt to solve the board
         {
             this.SolveInternal(boardData);
-            Console.WriteLine(boardData);
+
+            foreach (var item in boardData)
+            {
+                Console.WriteLine(item);
+            }
+           
         }
 
         private bool SolveInternal(int[,] boardData) //instigates the solution search
