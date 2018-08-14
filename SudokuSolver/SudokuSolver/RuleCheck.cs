@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace SudokuSolver
 {
-    class Program
+    public class RuleCheck
     {
-        static void Main(string[] args)
-        {
-            var Board = new Board();
-            var newboard = Board.GetBoard();
-
-        }
+        public const int BoardDimensions = 9; //used for height and width of board
     }
 }
