@@ -14,11 +14,15 @@ namespace SudokuSolver
         {
             this.SolveInternal(boardData);
 
-            foreach (var item in boardData)
+            for (int ix = 0; ix < BoardDimensions; ix++)
             {
-                Console.WriteLine(item);
+                for (int iy = 0; iy < BoardDimensions; iy++)
+                {
+                    Console.Write(boardData[ix, iy]);
+                }
+                Console.WriteLine();
             }
-           
+
         }
 
         private bool SolveInternal(int[,] boardData) //instigates the solution search
